@@ -55,12 +55,12 @@ const menuItems = [
   {
     listIcon: <Home />,
     listText: "Home",
-    listPath: "/Home",
+    listPath: "/",
   },
   {
     listIcon: <AssignmentInd />,
     listText: "Resume",
-    listPath: "/Resume",
+    listPath: "/resume",
   },
   {
     listIcon: <Apps />,
@@ -96,8 +96,7 @@ const Navbar = () => {
         <Divider />
         <List>
           {menuItems.map((lsItem, key) => (
-            // <ListItem button key={key} component={Link} to={lsItem.listPath}>
-            <ListItem button key={key}>
+            <ListItem button key={key} component={Link} to={lsItem.listPath}>
               <ListItemIcon className={classes.listItem}>
                 {lsItem.listIcon}
               </ListItemIcon>
