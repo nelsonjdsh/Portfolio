@@ -13,7 +13,7 @@ const Home = () => {
   // const classes = useStyles();
   return (
     <div>
-      <NavBar />
+      <NavBar /> 
       <Header />
     </div>
   );
